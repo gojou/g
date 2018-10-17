@@ -7,7 +7,12 @@ import (
 
 func main() {
 	args := os.Args
-	hello(args[1])
+	if len(args) == 1 {
+		hello("World")
+	} else {
+		hello(args[1])
+	}
+
 }
 
 func hello(s string) {
