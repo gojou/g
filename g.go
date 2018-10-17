@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
+	"os"
 )
 
 func main() {
-	hello("World")
+	args := os.Args
+	hello(args[1])
 }
 
 func hello(s string) {
