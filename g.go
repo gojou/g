@@ -5,5 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello Croton!")
+	hello("World")
+}
+
+func hello(s string) {
+	fmt.Println("Hello " + s + "!")
 }
